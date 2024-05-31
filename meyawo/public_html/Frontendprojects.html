@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="meyawo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- FontAwesome for icons -->
+    <style>
+        .header {
+            position: relative;
+            padding: 20px 0;
+            background-color: #695aa6;
+            color: white;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            color: #0056b3;
+        }
+
+        .back-button i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 576px) {
+            .header .back-button {
+                position: static;
+                transform: none;
+                margin-bottom: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-title {
+            color: #695aa6;
+        }
+
+        .btn-custom {
+            background-color: #695aa6;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #563d7c;
+            color: white;
+        }
+
+        @media (max-width: 576px) {
+            .header .back-button {
+                position: static;
+                transform: none;
+                margin-bottom: -32px;
+                margin-left: 27px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header text-center">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1>Frontend Projects <img width="48" height="48" src="https://img.icons8.com/fluency/48/imac.png" alt="imac" />
+        </h1>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <a href="https://moviz-by-abhishek.netlify.app/">
+                        <img src="assets/imgs/moviz.png" class="card-img-top blog-card-img" alt="Project 1">
+                    </a>
+                    <div class="card-body">
+                        <a href="https://moviz-by-abhishek.netlify.app/">
+                            <h5 class="card-title project-title"><u>Dynamic Movies Website</u></h5>
+                        </a>
+                        <p>Technologies Used:<br><b> Javascript, React 18, Redux Tool-kit, Bootstrap, Scss etc.</b></p>
+                        <p class="card-text">A brief description of Project 1. It showcases some amazing features and
+                            functionalities.</p>
+                        <a class="btn btn-custom"> view Project 👉🏼</a>
+
+                        <a href="https://moviz-by-abhishek.netlify.app/" class="btn btn-custom">Live🔴</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <a href="https://cipherkey.netlify.app">
+                        <img src="assets/imgs/cipherkey.png" class="card-img-top blog-card-img" alt="Project 3">
+                    </a>
+                    <div class="card-body">
+                        <a href="https://cipherkey.netlify.app">
+                            <h5 class="card-title project-title"><u>Secured Password Manager</u></h5>
+                        </a>
+                        <p>Technologies Used:<br><b> Javascript, React 18, Redux Tool-kit, Bootstrap, Scss etc.</b></p>
+                        <p class="card-text">A brief description of Project 3. It showcases some amazing features and
+                            functionalities.</p>
+                        <a class="btn btn-custom"> view Project 👉🏼</a>
+                        <a href="https://cipherkey.netlify.app/" class="btn btn-custom"> Live🔴 </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="assets/imgs/technocase.png" class="card-img-top blog-card-img" alt="Project 2">
+                    <div class="card-body">
+                        <a href="maintainance.html">
+                            <h5 class="card-title project-title"><u>Events Management Portal</u></h5>
+                        </a>
+                        <p>Technologies Used:<br><b>HTML, CSS, Javascript, PHP, MYSQL, Bootstrap, Scss etc.</b></p>
+                                <p class="card-text">A brief description of Project 2. It showcases some amazing
+                                    features and
+                                    functionalities.</p>
+                                <a class="btn btn-custom"> view Project👉🏼</a>
+                                <a href="maintainance.html" class="btn btn-custom">Live🔴 </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Abhishek Patil. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
